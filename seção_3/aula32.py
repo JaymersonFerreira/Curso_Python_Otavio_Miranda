@@ -1,6 +1,5 @@
 # try:
 #     num = int(input("Digita um número inteiro: "))
-    # se num divido por 2 restar 0 execute: print()
 #     if num % 2 == 0:
 #         print(f"O número: {num} é PAR")
 #     elif  num % 3 == 0:
@@ -8,15 +7,19 @@
 # except:
 #     (print("Não é um número inteiro!"))
 
-# horario = int(input('Inform a hora: '))
-# if 0 < horario <= 11:
-#     print('Bom Dia!')
-# elif 12 < horario <= 17:
-#     print('Boa Tarde!')
-# elif 18 < horario <= 23:
-#     print('Boa Noite')
-# else:
-#     print("Erro")
+horario = input('Informe a hora: ')
+try:
+    horario_int = int(horario)
+    if 0 < horario_int <= 11:
+        print('Bom Dia!')
+    elif 12 < horario_int <= 17:
+        print('Boa Tarde!')
+    elif 18 < horario_int <= 23:
+        print('Boa Noite')
+    else:
+        print('Não conheço este número')
+except:
+        print("Digite um número válido!")
 
 
 nome = input("Digite seu Nome: ")
