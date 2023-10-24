@@ -7,26 +7,39 @@
 # except:
 #     (print("Não é um número inteiro!"))
 
-horario = input('Informe a hora: ')
-try:
-    horario_int = int(horario)
-    if 0 < horario_int <= 11:
-        print('Bom Dia!')
-    elif 12 < horario_int <= 17:
-        print('Boa Tarde!')
-    elif 18 < horario_int <= 23:
-        print('Boa Noite')
+# horario = input('Informe a hora: ')
+# try:
+#     horario_int = int(horario)
+#     if 0 < horario_int <= 11:
+#         print('Bom Dia!')
+#     elif 12 < horario_int <= 17:
+#         print('Boa Tarde!')
+#     elif 18 < horario_int <= 23:
+#         print('Boa Noite')
+#     else:
+#         print('Não conheço este número')
+# except:
+#         print("Digite um número válido!")
+
+
+# nome = input("Digite seu Nome: ")
+# if 0 < len(nome) <= 4:
+#     print('Seu nome é curto')
+# elif 5 < len(nome) <= 6:
+#     print('Seu nome é normal')
+# elif len(nome) > 6:
+#     print('Seu nome é muito grande')
+
+nome = input('Digite seu nome: ')
+
+tamanho_nome = len(nome)
+
+if tamanho_nome > 1:
+    if tamanho_nome <= 4:
+        print('Seu nome é curto')
+    elif tamanho_nome >= 5 and tamanho_nome <= 6:
+        print('Seu nome é normal')
     else:
-        print('Não conheço este número')
-except:
-        print("Digite um número válido!")
-
-
-nome = input("Digite seu Nome: ")
-if 0 < len(nome) <= 4:
-    print('Seu nome é curto')
-elif 5 < len(nome) <= 6:
-    print('Seu nome é normal')
-elif len(nome) > 6:
-    print('Seu nome é muito grande')
-
+        print('Seu nome é muito grande')
+else:
+    print('Digite mais de uma letra.')
