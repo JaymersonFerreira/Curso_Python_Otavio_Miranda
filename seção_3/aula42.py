@@ -25,7 +25,7 @@ print(
     f'{qtd_apareceu_mais_vezes}x'
 )
 
-frase = 'aaaoo'
+frase = 'aaaooo'
 
 i = 0 
 qtd_apareceu_mais_vezes = 0 
